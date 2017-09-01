@@ -1,0 +1,91 @@
+<html>
+</html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Портфолио</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Последняя компиляция и сжатый CSS -->  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Дополнение к теме -->  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-custom navbar-fixed-top">
+		<div class="container">
+			<div class"navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Навигация</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Alex</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Главная<span class="sr-only">(current)</span></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Портфолио<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="Сайт-тест. Адаптация/1.1index.html">Работа № 1</a></li>
+							<li><a href="Сайт-тест. Портфолио/index.html">Работа № 2</a></li>
+							<li><a href="Сайт-тест. Рулетка/index.html">Работа № 3</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Все работы</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Галерея</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>﻿
+	<!-- Последняя компиляция и сжатый JavaScript -->  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<div class="par">
+		<div class="k1">
+			<ul id="scene">
+				<li class="layer" data-depth="0.00"><img src="img/pc.png" class="img-responsive" alt="sadas"></li>
+				<li class="layer" data-depth="0.20"><img src="img/sm.png" class="i1" alt="sadas"></li>
+				<li class="layer" data-depth="2.00"><img src="img/lg.png" class="i2" alt="sadas"></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/parallax.min.js"></script>
+	<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	</script>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Обо мне</h1>
+			<p>Здравствуйте, мое имя — Алексей, мне 18 лет. Я учусь в "Многопрофильном колледже ИСТиС" на третьем курсе по специальности "Программирование в компьютерных системах". На данный момент, я занимаюсь изучением верстки сайтов. Этот сайт я сделал, используя Bootstrap. Из языков, на данный момент, я изучаю html (Стандартизированный язык разметки), CSS (Формальный язык описания внешнего вида документа, написанного с использованием языка разметки), JavaScript (язык программирования, с помощью которого веб-страницам придается интерактивность). Досуг я привык проводить за компьютерными играми.</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="image"><img src="img/выгода.png"></div>
+				<p>Я гарантирую лучшую цену. Вы останетесь довольны ценой и качеством выполненных работ.</p>
+			</div>
+			<div class="col-md-4">
+				<div class="image"><img src="img/сроки.png"></div>
+				<p>Я все делаю со своей командой, а поэтому мы делаем все задолго до назначенного времени.</p>
+			</div>
+			<div class="col-md-4">
+				<div class="image"><img src="img/гарантия.png"></div>
+				<p>Мы хотим, чтобы вы еще долго оставались довольны качеством нашей работы. Мы выполняем свою работу на все 100%.</p>
+			</div>
+		</div>
+		<hr>
+		<footer>
+			<p>&copy; Все права защищены 2017</p>
+		</footer>
+	</div>
+</body>
+</html>
