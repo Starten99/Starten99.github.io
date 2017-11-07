@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: white;
 }
 .menu{
     position: relative;
@@ -148,6 +148,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
     height: 100vh;
     color: white;
     text-align: center;
@@ -377,7 +378,7 @@ body{
 }
 a.button{
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid #111e31;
     font-size: 28px;
     color: black;
     font-family: 'Fira Sans', sans-serif;
@@ -394,6 +395,7 @@ a.button:hover{
     border: none;
     
 }
+
 @media (max-width: 414px){
     a.button{
         display:block;
@@ -405,4 +407,138 @@ a.button:hover{
         padding-right: 15px;
         padding-top: 15px;
     }
+}
+@media (max-width: 300px){
+    a.button{
+    font-size: 15px;
+    }
+}
+.sld{
+    background-color: white;
+    max-width:1138px;
+    margin: 0px auto;
+    margin-top: 114px;
+    padding-bottom: -100px;
+}
+.news{
+    width: 100%;
+    height: auto;
+    padding-bottom: 35px;
+}
+.news p{
+    text-align: center;
+    font-size: 55px;
+    padding-top: 50px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.n-text p{
+    font-size: 36px;
+    padding: 0px;
+    text-align: left;
+    margin: 0px;
+    color: #111e31;
+    font-family: 'Fira Sans', sans-serif;
+}
+.news-block{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+.n1{
+    margin-left: 10px;
+    flex: 1 1 200px;
+    display: flex;
+}
+.n-img-responsive img{
+    width: 100%;
+    max-width: 263px;
+    min-width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.n-img-responsive{
+    margin: 10px;
+    flex: 1 1 300px;
+}
+.n-text{
+    margin: 10px;
+    flex: 1 1 840px;
+}
+.n-text p{
+    padding-top: 80px;
+}
+.ns1{flex: 1 1 570px}
+.ns2{flex: 1 1 570px}
+.ns3{flex: 1 1 570px}
+
+@media (max-width: 741px){
+    .n-text p{
+    padding-top: 50px;
+    font-size: 30px;
+    }
+}
+@media (max-width: 574px){
+    .n-text p{
+    padding-top: 35px;
+    font-size: 25px;
+    }
+}
+@media (max-width: 507px){
+    .n-text p{
+    padding-top: 30px;
+    font-size: 20px;
+    }
+}
+@media (max-width: 407px){
+    .n-text p{
+    padding-top: 20px;
+    font-size: 15px;
+    }
+}
+@media (max-width: 310px){
+    .n-text p{
+    font-size: 10px;
+    }
+}
+    
+.button1{
+    font-size: 24px;
+    color: #111e31;
+}
+.button1:hover{
+    color:#00abfe;
+    text-decoration: none;
+    transition: 0.3s;
+}
+@media (max-width: 570px){
+    .button1{
+    font-size: 18px;
+    }
+}
+@media (max-width: 407px){
+    .button1{
+    padding-top: 20px;
+    font-size: 12px;
+    }
+}
+@media (max-width: 310px){
+    .button1{
+    font-size: 8px;
+    }
+}
+.konec{
+    width: 100%;
+    height: auto;
+}
+.konec p{
+    text-align: center;
+    font-size: 30px;
+    color: black;
 }
