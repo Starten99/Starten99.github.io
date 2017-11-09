@@ -287,11 +287,12 @@ body{
 }
 .place2{
     background-color: #c6e714;
+    height: auto;
     background-image: url(../img/place.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 70vh;
+    overflow: hidden;
     color: white;
     display: flex;
     flex-direction: column;
@@ -324,30 +325,30 @@ body{
 .gl2{
     width: 535px;
     height: 320px;
-
 }
 .hl1{
-    position: relative;
+    margin-bottom: 100px;
 }
 .place2_text{
     padding-top: 198px;
     color: black;
-    position: relative;
     padding-left: 20px;
     padding-right: 20px;
     display:-webkit-box;
     display:-webkit-flex;
     display: -ms-flexbox;
+     overflow: hidden;
     display: flex;
     flex-direction:row;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
     align-content: stretch;
+    padding-bottom: 20px;
 }
 .pl{
     width: 100%;
-    height: auto;
+    
 }
 @media (max-width: 991px){
     .gl1{
