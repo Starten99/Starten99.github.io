@@ -16,7 +16,7 @@ body{
 .navbar-custom  .navbar-nav > li > p { 
 	color: #b7cf2f;
 	padding-top: 15px;
-	padding-left: 20px;
+	padding-left: 15px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 700; 
 	src: url('https://fonts.googleapis.com/css?family=Fira+Sans:700');
@@ -377,25 +377,6 @@ body{
     font-size: 11px;
     }
 }
-a.button{
-    text-decoration: none;
-    border: 1px solid #111e31;
-    font-size: 28px;
-    color: black;
-    font-family: 'Fira Sans', sans-serif;
-	background-color: none;
-    padding-bottom: 19px;
-    padding-left: 19px;
-    padding-right: 19px;
-    padding-top: 19px;
-	border-radius: 2px;
-}
-a.button:hover{
-	background-color: black;
-    color: #c6e714;
-    border: none;
-    
-}
 
 @media (max-width: 414px){
     a.button{
@@ -443,17 +424,7 @@ a.button:hover{
     font-size: 30px;
     color: black;
 }
-.container h1{
-	color:#FF4500;
 
-}
-.container p{
-    text-align: justify;
-    font-size: 20px;
-    font-family: 'Fira Sans', sans-serif;
-}
-.col-md-4{
-}
 .row{
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -461,6 +432,9 @@ a.button:hover{
 
 .col-md-4 p{
 	padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
 }
 .button1{
     font-size: 18px;
@@ -471,7 +445,7 @@ a.button:hover{
     text-decoration: none;
     transition: 0.3s;
 }
-.zag p{
+.zag{
     font-size:55px;
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
