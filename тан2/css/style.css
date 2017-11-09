@@ -296,7 +296,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     z-index: 1;
 
 }
@@ -328,7 +327,7 @@ body{
 
 }
 .hl1{
-    
+    position: relative;
 }
 .place2_text{
     padding-top: 198px;
