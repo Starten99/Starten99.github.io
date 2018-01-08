@@ -26,10 +26,11 @@
                     <div class="navbar-brand" href="#"><img src="img/2.png"></div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">git<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">УЧАСТНИКИ</a></li>
-                        <li><a href="#">КАК ДОБРАТЬСЯ</a></li>
-                        <li><a href="#">КОНТАКТЫ</a></li>
+                        <li><a href="#place">О ЧЕМПИОНАТЕ<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#chempionat1">МЕСТО ПРОВЕДЕНИЯ</a></li>
+                        <li><a href="#fhon">ФОТО</a></li>
+                        <li><a href="#rowig">НОВОСТИ</a></li>
+                        <li><a href="#chempionat_title">КОНТАКТЫ</a></li>
                         <li><p><b>+7(351)240-00-00</b></p></li>
                     </ul>
                 </div>
@@ -41,11 +42,11 @@
     </div>
 <div class="header">
     <div class="header_title">Танцы — это жизнь!</div>
-    <div class="header_arrow">
-        <a href="#"><img src="img/arrow.png"></a>
+    <div id="header_arrow">
+        <a href="#place"><img src="img/arrow.png"></a>
     </div>
 </div>
-    <div class="place">
+    <div id="place">
         <div class="main">
             <div class="bl3 f1">
                Чемпионат мира по танцевальному спорту <br> Челябинск 2018
@@ -64,23 +65,24 @@
             </div>
         </div>
     </div>
-    <div class="place2">
-        <div class="place2_title">
-            Где проходит?
-        </div>
-        <div class="pl">
-            <div class="place2_text">
-                <div class="gl1 hl1">
-                    <p>Соревнование примет ледовая арена «Трактор». Организаторы ожидают большое число спортсменов и гостей – 4-4,5 тысячи человек. «У нас высокий уровень организации. Мы способны показать и научить многому по тому, как можно и нужно великолепно принимать гостей, организовывать соревнования и делать шоу для зрителей», – подчеркнула директор спортивной школы по танцевальному спорту «Вероника» Вероника Болтвина-Бутузова.Продажа билетов на гала-шоу Кубка губернатора уже открыта в городских кассах.</p>
-                    <br>
-                    <a href="#" class="button">КУПИТЬ БИЛЕТ</a>
+    <div id="chempionat1">
+        <div class="chempionat_title1">
+            <div class="container news1">
+                <div class="row rp1">
+                    <div class="tit1"><p>Где проходит?</p></div>
+                    <div class="map">
+                        <div class="sorev"><p>Соревнование примет ледовая арена «Трактор».<br> Организаторы ожидают большое число спортсменов и гостей – 4-4,5 тысячи человек. «У нас высокий уровень организации. Мы способны показать и научить многому по тому, как можно и нужно великолепно принимать гостей, организовывать соревнования и делать шоу для зрителей», – подчеркнула директор спортивной школы по танцевальному спорту «Вероника» Вероника Болтвина-Бутузова.Продажа билетов на гала-шоу Кубка губернатора уже открыта в городских кассах.</p>
+                            <br>
+                            <a href="#" class="button">КУПИТЬ БИЛЕТ</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="gl2 hl1"></div>
             </div>
         </div>
     </div>
-    <div class="fhon">
-        <div class="sld">
+    <div id="fhon">
+        <div class="tit2"><p>Фото</p></div>
+        <div id="sld">
             <div class="bxslider">
                 <div><img src="img/slider1.jpg"></div>
                 <div><img src="img/slider2.jpg"></div>
@@ -91,7 +93,7 @@
         </div>     
     </div>
     <div class="container news">
-        <div class="row">
+        <div id="rowig">
             <div class="zag"><p>Новости</p></div>
             <div class="col-md-4">
 				<div class="n-img-responsive"><img src="img/news1.jpg"></div>
@@ -111,7 +113,7 @@
 		</div>
     </div>
     <div class="chempionat">
-        <div class="chempionat_title">
+        <div id="chempionat_title">
             <div class="container news1">
                 <div class="row">
                     <div class="tit"><p>Посетить чемпионат</p></div>
@@ -140,5 +142,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="bxslider-4-4.2.12/bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
 <script src="js/js.js" type="text/javascript"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#bs-example-navbar-collapse-1").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#header_arrow").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+</script>
 </body>
 </html>
