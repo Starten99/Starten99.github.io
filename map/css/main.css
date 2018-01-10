@@ -15,6 +15,7 @@ svg {
 
 .part {
 	opacity: .3;
+    z-index: 1;
 }
 
 .part:hover {
@@ -22,19 +23,16 @@ svg {
 	opacity: .5;
 	cursor: pointer;
 }
-.path{
-    background-color: green;
-}
-
 .description {
 	display: none;
 	position: absolute;
 	padding: 20px;
 	box-sizing: border-box;
 	width: 300px;
-	height: 400px;
+	height: 300px;
 	box-shadow: 0 0 32px 10px #ccc;
 	left: 50px;
+    top: 550px;
 	bottom: calc(50% - 200px);
 	font-family: sans-serif;
 }
