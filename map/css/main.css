@@ -1,5 +1,13 @@
 body {margin: 0; padding: 0;}
-
+.gastr_tur{
+    font-size: 40px;
+    text-align: center;
+}
+.inter_map{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 .map {
 	position: relative;
 	text-align: center;
@@ -26,18 +34,18 @@ svg {
 .description {
 	display: none;
 	position: absolute;
-	padding: 20px;
+	padding: 10px;
 	box-sizing: border-box;
-	width: 300px;
-	height: 300px;
+	width: 150px;
+	height: 190px;
+    top: 550;
 	box-shadow: 0 0 32px 10px #ccc;
-	left: 50px;
-    top: 550px;
+	left: 200px;
 	bottom: calc(50% - 200px);
 	font-family: sans-serif;
 }
 
 .description img {
-	width: 250px;
+	width: 100%;
 	margin-bottom: 20px;
 }
