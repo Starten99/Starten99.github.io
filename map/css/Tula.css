@@ -50,6 +50,8 @@ body{
     font-size: 24px; 
     font-family: 'Fira Sans', sans-serif;
     padding: 2px;
+    text-align: justify;
+    padding-right: 50px;
 }
 @media (max-width: 700px){
     .bl1{
@@ -68,6 +70,7 @@ body{
 }
 .bl2{
     padding: 2px;
+    width: 25%;
 }
 .main{
     color: #111e31;
@@ -86,19 +89,14 @@ body{
     background-color: #f8f8f8;
 }
 .bl3{
-    padding-right: 700px;
+    padding-right: 30%;
 }
 @media (max-width: 1136px){
     .bl3{
-    padding-right: 690px;
+    padding-right: 10%;
     }
-}
-@media (max-width: 1128px){
-    .bl3{
-    padding-right: 370px;
-    }
-    .img-responsive{
-    padding-top: 30px;
+    .bl2{
+    width: 35%;
 }
 }
 
