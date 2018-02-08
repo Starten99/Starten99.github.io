@@ -11,6 +11,7 @@
 <!-- Дополнение к теме -->  
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://use.fontawesome.com/d1317ec63d.js"></script>
 </head>
 <body>
     <!--header-->
@@ -28,7 +29,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#place">О ЧЕМПИОНАТЕ<span class="sr-only">(current)</span></a></li>
                         <li><a href="#chempionat1">МЕСТО ПРОВЕДЕНИЯ</a></li>
-                        <li><a href="#fhon">ФОТО</a></li>
+                        <li><a href="#tit2">ФОТО</a></li>
                         <li><a href="#rowig">НОВОСТИ</a></li>
                         <li><a href="#chempionat_title">КОНТАКТЫ</a></li>
                         <li><p><b>+7(351)240-00-00</b></p></li>
@@ -73,7 +74,7 @@
                     <div class="map">
                         <div class="sorev"><p>Соревнование примет ледовая арена «Трактор».<br> Организаторы ожидают большое число спортсменов и гостей – 4-4,5 тысячи человек. «У нас высокий уровень организации. Мы способны показать и научить многому по тому, как можно и нужно великолепно принимать гостей, организовывать соревнования и делать шоу для зрителей», – подчеркнула директор спортивной школы по танцевальному спорту «Вероника» Вероника Болтвина-Бутузова.Продажа билетов на гала-шоу Кубка губернатора уже открыта в городских кассах.</p>
                             <br>
-                            <a href="#" class="button">КУПИТЬ БИЛЕТ</a>
+                            <a href="http://www.susanin.ru/" class="button">КУПИТЬ БИЛЕТ</a>
                         </div>
                     </div>
                 </div>
@@ -81,7 +82,7 @@
         </div>
     </div>
     <div id="fhon">
-        <div class="tit2"><p>Фото</p></div>
+        <div id="tit2"><p>Фото</p></div>
         <div id="sld">
             <div class="bxslider">
                 <div><img src="img/slider1.jpg"></div>
@@ -121,7 +122,7 @@
                         <a href="http://sportveronikaclub.ru/" class="button_Chelyabinsk">Я житель Челябинска</a>
                     </div>
                     <div class="col-md-6">
-                        <a href="https://pegast.ru/" class="button_another_city">Я из другого города</a>
+                        <a href="http://www.susanin.ru/" class="button_another_city">Я из другого города</a>
                     </div>
                 </div>
             </div>
@@ -137,6 +138,9 @@
                 <p>+7 (351) 240-00-00<br>                                             turism&tanec@mail.ru</p>
             </div>
         </div>
+    </div>
+    <div id="back-to-top">
+        <i class="fa fa-chevron-up"></i>
     </div>
 <link rel="stylesheet" href="bxslider-4-4.2.12/bxslider-4-4.2.12/src/css/jquery.bxslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -161,6 +165,24 @@
         $('body,html').animate({scrollTop: top}, 1000);
     });
 });
+</script>
+    <script type="text/javascript">
+        var limit     = $(window).height()/11,
+    $backToTop = $('#back-to-top');
+        $(window).scroll(function () {
+    if ( $(this).scrollTop() > limit ) {
+        $backToTop.fadeIn();
+    } else {
+        $backToTop.fadeOut();
+    }
+        });
+        $backToTop.click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 1500);
+    return false;
+});
+
 </script>
 </body>
 </html>
