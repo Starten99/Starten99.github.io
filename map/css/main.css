@@ -50,7 +50,7 @@ svg{
     opacity: .5;
 }
 
-.description {
+.description{
 	display: none;
 	position: absolute;
 	padding: 10px;
