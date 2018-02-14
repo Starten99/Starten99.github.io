@@ -89,15 +89,13 @@ body{
     background-color: #f8f8f8;
 }
 .bl3{
-    padding-right: 39%;
+    padding-right: 38%;
 }
 @media (max-width: 1136px){
     .bl3{
-    padding-right: 20%;
+    padding-right: 24%;
     }
     .bl2{
     width: 35%;
 }
 }
-
-
