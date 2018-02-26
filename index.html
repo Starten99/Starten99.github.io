@@ -1,17 +1,20 @@
 ﻿<html>
-</html>
-<html>
 <head>
 <meta charset="utf-8">
 <title>Портфолио</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Последняя компиляция и сжатый CSS -->  
+<!-- Последняя компиляция и сжатый CSS -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:700" rel="stylesheet">
+<link rel="SHORTCUT ICON" href="img/logo.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Дополнение к теме -->  
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+<script src="https://use.fontawesome.com/d1317ec63d.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-custom navbar-fixed-top">
@@ -23,7 +26,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Alex</a>
+				<a class="navbar-brand" href="#">ALEX</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
@@ -36,6 +39,7 @@
 							<li><a href="Сайт-тест. Рулетка/index.html">Работа № 3</a></li>
                             <li><a href="тан2/index.html">Танцы</a></li>
                             <li><a href="map/Russian_version.html">Карта</a></li>
+                            <li><a href="oldversionofportfolio/index.html">Портфолио, старая версия</a></li>
 							<li class="divider"></li>
 							<li><a href="#">Все работы</a></li>
 						</ul>
@@ -52,9 +56,9 @@
 	<div class="par">
 		<div class="k1">
 			<ul id="scene">
-				<li class="layer" data-depth="0.00"><img src="img/pc.png" class="img-responsive" alt="sadas"></li>
-				<li class="layer" data-depth="0.20"><img src="img/sm.png" class="i1" alt="sadas"></li>
-				<li class="layer" data-depth="2.00"><img src="img/lg.png" class="i2" alt="sadas"></li>
+				<li class="layer" data-depth="0.00"><img src="img/pc2.png" class="img-responsive" alt="sadas"></li>
+				<li class="layer" data-depth="1.00"><img src="img/sm.png" class="i1" alt="sadas"></li>
+				<li class="layer" data-depth="8.00"><img src="img/lg.png" class="i2" alt="sadas"></li>
 			</ul>
 		</div>
 	</div>
@@ -63,31 +67,61 @@
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
 	</script>
-	<div class="jumbotron">
-		<div class="container">
-			<h1>Обо мне</h1>
-			<p>Здравствуйте, мое имя — Алексей, мне 18 лет. Я учусь в "Многопрофильном колледже ИСТиС" на третьем курсе по специальности "Программирование в компьютерных системах". На данный момент, я занимаюсь изучением верстки сайтов. Этот сайт я сделал, используя Bootstrap. Из языков, на данный момент, я изучаю html (Стандартизированный язык разметки), CSS (Формальный язык описания внешнего вида документа, написанного с использованием языка разметки), JavaScript (язык программирования, с помощью которого веб-страницам придается интерактивность). Досуг я привык проводить за компьютерными играми.</p>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="image"><img src="img/выгода.png"></div>
+    <div class="ar">
+        <div id="arrow">
+            <a href="#telo"><img src="img/arrow.png"></a>
+        </div>
+    </div>
+    <div id="telo">
+        <div class="container-telo">
+            <div class="container-title"><p>Обо мне</p></div>
+            <div class="container-body"><p>Здравствуйте, мое имя — Алексей, мне 18 лет. Я учусь в "Многопрофильном колледже ИСТиС" на третьем курсе по
+            специальности "Программирование в компьютерных системах". На данный момент, я занимаюсь изучением верстки сайтов. Из языков, на данный момент, я знаю <b>HTML</b> (cтандартизированный язык разметки), <b>CSS</b> (формальный язык описания внешнего вида документа, написанного с использованием языка разметки), занимаюсь изучением <b>JavaScript</b> (язык программирования, с помощью которого веб-страницам придается интерактивность), <b>PHP</b> (скриптовый язык общего назначения, интенсивно применяемый для разработки веб-приложений), <b>MySQl</b> (свободная реляционная система управления базами данных). Свободное время, я занимаюсь саморазвитием, прогулкой с друзьями, иногда играю в компьютерные игры.</p></div>
+            <div class="container-img"></div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="row">
+            <div class="zag"><p>Гарантии</p></div>
+            <div class="col-md-4">
+				<div class="n-img-responsive1"><img src="img/price.png"></div>
 				<p>Я гарантирую лучшую цену. Вы останетесь довольны ценой и качеством выполненных работ.</p>
 			</div>
 			<div class="col-md-4">
-				<div class="image"><img src="img/сроки.png"></div>
+				<div class="n-img-responsive1"><img src="img/result.png"></div>
 				<p>Я все делаю со своей командой, а поэтому мы делаем все задолго до назначенного времени.</p>
 			</div>
 			<div class="col-md-4">
-				<div class="image"><img src="img/гарантия.png"></div>
-				<p>Мы хотим, чтобы вы еще долго оставались довольны качеством нашей работы. Мы выполняем свою работу на все 100%.</p>
+				<div class="n-img-responsive1"><img src="img/quality.png"></div>
+				<p>Мы хотим, чтобы вы еще  долго оставались довольны качеством нашей работы. Мы выполняем свою работу на все 100%.</p>
 			</div>
 		</div>
-		<hr>
-		<footer>
-			<p>&copy; Все права защищены 2017</p>
-		</footer>
-	</div>
+    </div>
+    <div class="footer">
+        <div class="rows">
+            <div class="col-md-4">
+				<p>Алексей Заравнятных, 2018<br>
+                    aleksey-starten@mail.ru</p>
+			</div>
+			<div class="col-md-4">
+				<p>© WEB-студия «Starten»<br>
+                    8 (952) 510-54-15</p>
+			</div>
+			<div class="col-md-4">
+				<a href="https://vk.com/alekseystarten" target="_blank"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a><a href="https://github.com/Starten99/Starten99.github.io" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a><a href="http://steamcommunity.com/id/starten/" target="_blank"><i class="fa fa-steam-square fa-2x" aria-hidden="true"></i></a>
+			</div>
+		</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+ $(document).ready(function(){
+    $("#arrow").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+    </script>
 </body>
 </html>

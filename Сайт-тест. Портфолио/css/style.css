@@ -1,0 +1,164 @@
+﻿.header{
+	background-color: black;
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+}
+.logo{
+	display: block;
+	margin: auto;
+	background-color: black;
+	width: 10%;
+	min-width: 160px;
+	height: 60px;
+}
+.logo img{
+	width: auto;
+	height: 40px;
+	padding-top: 10px;
+	display: block;
+	margin: auto;
+}
+.m2{
+	width: 100%;
+	height: 42px;
+	background-color: #666666;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+}
+.m1 ul{
+	list-style: none;
+	padding: 0px;
+}
+.m1 > ul{
+	display: flex;
+	margin:auto; 
+	justify-content:center;
+}
+.m1 > ul li a{
+	display: block;
+	background-color: #666666;
+	padding: 10px 40px 10px 40px;
+	font-size: 15px;
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+}
+.m1 > ul li{
+	position: relative;
+}
+.m1> ul li> a i.fa{
+	position: absolute;
+	top: 9px;
+	left: 12px;
+	font-size: 18px;
+}
+.m1 li a:hover{
+	background-color: #333333;
+	box-shadow: 1px 8px 20px -5px black;
+	transition: all 0.5s ease;
+}
+.m1 li ul{
+	position: absolute;
+	min-width: 150px;
+	display: none;
+}
+.m1 li> ul li a{
+	padding: 10px;
+	text-transform: none;
+	background-color: #666666;
+}
+.m1 li:hover > ul{
+	display: block;
+}
+.m1 [type="checkbox"],
+.m1 label.SubMenu{
+	display: none;
+}
+.m1 label.Menu{
+	display: block;
+	background-color: #666666;
+	padding: 10px 40px 10px 40px;
+	font-size: 15px;
+	color: white;
+	position: relative;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	display: none;
+}
+.m1 label.Menu.fa{
+	position: absolute;
+}
+.par{
+	background: white;
+	margin-top: 350px;
+	display: flex;
+	justify-content:center;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
+.i1{
+	width: 100%;
+	height: auto;
+}
+.i2{
+	width: 100%;
+	height: auto;
+}
+@media all and (max-width: 600px){
+	.m1{
+		overflow: hidden;
+	}
+	.m1 ul{
+		display: none;
+	}
+	.m1 label.Menu{
+		display: block;
+		display: flex;
+		margin:auto; 
+		justify-content:center;
+	}
+	input.Menu:checked+label.Menu{
+	background-color: #333333;
+	}
+	input.Menu:checked ~ ul,
+	input.SubMenu:checked ~ ul{
+		display: block;
+		position: relative;
+	}
+	.m1 label.SubMenu{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		display: block;
+	}
+	input.SubMenu:checked ~a{
+		background-color: #333333;
+	}
+	.m1 label.SubMenu.fa:before{
+		color: white;
+	}
+	.m1 label.SubMenu i.fa{
+		position: absolute;
+		top: 8px;
+		right: 30px;
+		color: white;
+	}
+	.m1 label.SubMenu i.fa:hover{
+
+	}
+	.m1 input.SubMenu:checked ~ label.SubMenu i.fa::before{
+		content:"\f0d8";
+		color:white;
+	}
+}
+

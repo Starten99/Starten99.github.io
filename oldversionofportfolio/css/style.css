@@ -1,0 +1,143 @@
+.navbar-custom  .navbar-nav > li > a { 
+	color: black; 
+}
+.navbar-custom { 
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+.navbar-custom  .navbar-brand { 
+	color: #FF4500; 
+}
+.navbar-custom  .navbar-brand:hover, .navbar-default .navbar-brand:focus { 
+	color: #FF4500; 
+}
+.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus { 
+	color: #FF4500;
+	background-color: #F8F8F8;
+}
+.navbar-custom .navbar-nav > li{
+	padding-left: 10px;
+}
+.navbar-custom .navbar-nav > li > a{
+	position: relative;
+}
+.navbar-custom .navbar-nav > li > a::before{
+	content: '';
+	width: 0px; 
+	height: 2px;
+	background-color: black;
+	position: absolute;
+	top: 80%;
+	left: 0px;
+	transition: 0.7s;
+	
+}
+.navbar-custom .navbar-nav > li > a::after{
+	content: '';
+	width: 0px; 
+	height: 2px; 
+	background-color: #FF4500;
+	position: absolute;
+	top: 80%;
+	right: 0px;
+	transition: 0.7s;
+}
+.navbar-custom .navbar-nav > li > a:hover::before{
+	width: 50%;
+	transform: translateX(100%);
+}
+.navbar-custom .navbar-nav > li > a:hover::after{
+	width: 50%;
+	transform: translateX(-100%);
+}
+.navbar-custom .navbar-toggle {
+	border: none;
+	background-color: none; 
+}
+.navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus { 
+	background-color: #DDD; 
+}
+.navbar-custom .navbar-toggle .icon-bar { 
+	background-color: #808080; 
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+	margin-left: 5px;
+}
+.navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover{
+	color: #FF4500;
+
+}
+
+@media (max-width: 767px){
+	.navbar-custom .navbar-nav > li > a::before{
+		content: '';
+		width: 0px; 
+		height: 0px;
+		background-color: black;
+		position: absolute;
+		top: 80%;
+		left: 0px;
+		transition: 0.7s;
+	}
+	.navbar-custom .navbar-nav > li > a::after{
+		content: '';
+		width: 0px; 
+		height: 0px; 
+		background-color: #FF4500;
+		position: absolute;
+		top: 80%;
+		right: 0px;
+		transition: 0.7s;
+	}
+	.navbar-custom .navbar-nav > li > a:hover::before{
+		width: 50%;
+		transform: translateX(100%);
+	}
+	.navbar-custom .navbar-nav > li > a:hover::after{
+		width: 50%;
+		transform: translateX(-100%);
+	}
+	.navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus { 
+		color: #FF4500;
+		background-color: #F8F8F8;
+	}
+	
+}
+.par{
+	background: white;
+	margin-top: 200px;
+	display: flex;
+	justify-content:center;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
+.i1{
+	width: 100%;
+	height: auto;
+}
+.i2{
+	width: 100%;
+	height: auto;
+}
+.container h1{
+	color:#FF4500;
+}
+.col-md-4{
+	text-align: center;
+	font-family: 'Encode Sans', sans-serif;
+}
+.row{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+hr{
+	margin-top: 100px;
+}
+.col-md-4 p{
+	padding-top: 10px;
+}
