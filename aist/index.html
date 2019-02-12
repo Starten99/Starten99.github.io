@@ -1,0 +1,442 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Маленький аист</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Page scroll animation using CSS animate" />  
+<meta name="keywords" content="css animation, loading effect, animate, scroll loading, scroll animation" />
+<!-- Иконка -->
+<!-- Шрифт -->
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Стили -->
+<link rel="stylesheet" type="text/css" href="assets/animate.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="bxslider-4-4.2.12/bxslider-4-4.2.12/src/css/jquery.bxslider.css">
+<!-- Иконки -->
+<script src="https://use.fontawesome.com/d1317ec63d.js"></script>
+</head>
+<body>
+    <!-- Меню -->
+	<div class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Навигация</span>
+					<span class="icon-hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+				</button>
+				<button type="button" class="navbar pull-right" id="phone-mobile">
+					<a href="tel:+7 (952) 510 54 15"><img class="phonetopmobile" src="img/phone.svg" alt=""></a>
+				</button>
+				<a class="navbar-brand" href="index.html"><img style="width: 200px;" src="img/logo.png" alt="Маленький аист"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-center">
+					<li>
+						<a href="#">
+							<span class="figura">
+								<img class="sale" src="img/sale.svg" alt="">
+							</span>
+							<span class="figura2">АКЦИЯ</span>
+						</a>
+					</li>	
+					<li><a href="#"><p>КАТАЛОГ</p></a></li>
+					<li><a href="#"><p>ДОСТАВКА И ОПЛАТА</p></a></li>
+					<li><a href="#"><p>КОНТАКТЫ</p></a></li>
+					<li><div class="phone"><a href="tel:+7 (952) 510 54 15"><img class="phonetop" src="img/phone.svg" alt="">&nbsp;795-46-47</a></div></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	<!--приветствующее изображение-->
+	<div class="header">
+		<div class="header-dark">
+			<div class="header_title">Заботиться о малыше — <br> приятно и легко</div><br>
+			<div class="header_title2"><p>Японские подгузники и безопасносная бытовая химия из европы для детей от 0+ по доступным ценам.</p></div><br>
+			<div>
+				<div class="zayvka2">
+					<a href="index2.html">ОСТАВИТЬ ЗАЯВКУ</a>
+				</div>
+			</div><br>
+			<div id="header_arrow">
+			    <a href="#sale-content"><img style="width: 70px;" src="img/arrow-down.svg"></a>
+			</div>
+		</div>
+	</div>
+	<!-- акция -->
+
+			<div id="sale-content">	
+				<div id="sale2">
+					<div class="flex-container">
+						<div class="sale2-test1"><img src="img/gift2.png" class="img-fluid" alt=""></div>
+						<div class="sale2-test2">
+							<p>Влажные салфетки в подарок при покупке подгузников Moony. Предложение действует до 1 марта</p>
+						</div>
+						<div class="sale2-test3">
+							<img src="img/gift3.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<!-- каталог -->
+	<div class="catalog">
+		<div class="catalog-title1">
+			<p>КАТАЛОГ</p>
+		</div>
+		<div class="catalog-title2">
+			<p>Рекомендуем для малышей от 0 до 5 месяцев</p>
+		</div>
+		<div class="catalog-title3">
+			<p>В раннем возрасте ребёнок особенно нуждается в вашей заботе. Мы подобрали лучшие товары, которые помогут вам в уходе за малышом.</p>
+		</div>
+		<div id="catalog-animate">
+			<div class="catalog-body">
+				<a href="product.html">
+					<div class="catalog-body-1  wow fadeInleft" data-wow-delay="0.2s">
+						<img src="img/catalog-body-1.svg" alt=""><br>
+						<p>Подгузники</p>
+					</div>
+				</a>
+				<a href="#">
+					<div class="catalog-body-2  wow fadeInright " data-wow-delay="0.2s">
+						<img src="img/catalog-body-2.svg" alt=""><br>
+						<p>Гигиена и уход</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Почему мы -->
+	<div class="service">
+		<div class="service-title1">
+			<p>ПОЧЕМУ МЫ?</p>
+		</div>
+		<div class="service-title2">
+			<p>Сэкономьте деньги и время — для этого мы и работаем</p>
+		</div>
+		<div class="service-body">
+				<div class="service-body-1 wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="2s">
+					<img src="img/Service1-delivery.svg" alt="Доставка"><br>
+					<p>Удобная доставка</p>
+					<div class="service-body-text-1"><p>Бесплатная доставка</p></div>
+				</div>
+				<div class="service-body-2 wow bounceInLeft" data-wow-delay="0.4s" data-wow-duration="2s">
+					<img src="img/Service2-Quality.svg" alt="Качество"><br>
+					<p>Высокое качество</p>
+					<div class="service-body-text-1"><p>Следим за качеством и хранением товара</p></div>
+				</div>
+				<div class="service-body-3 wow bounceInLeft" data-wow-delay="0.6s" data-wow-duration="2s">
+					<img src="img/Service3-Low-price.svg" alt="Низкиецены"><br>
+					<p>Низкие цены</p>
+					<div class="service-body-text-1"><p>Не завышаем цены, нам важно, чтобы нас ценило больше людей</p></div>
+				</div>
+				<div class="service-body-4 wow bounceInLeft" data-wow-delay="0.8s" data-wow-duration="2s">
+					<img src="img/Service4-Bonuses_and_competition.svg" alt="Бонусы и конкурсы"><br>
+					<p>Бонусы и конкурсы</p>
+					<div class="service-body-text-1"><p>Разыгрываем призы у себя на странице Вконтакте</p></div>
+				</div>
+		</div>
+	</div>
+	<!-- КАК МЫ РАБОТАЕМ? -->
+	<div class="work">
+		<div class="service-title1">
+			<p>КАК МЫ РАБОТАЕМ?</p>
+		</div>
+		<div class="service-title2">
+			<p>Быстро и удобно!</p>
+		</div>
+		<div class="work-body">
+				<div class="work-body-1 wow fadeIn" data-wow-delay="0.2s" >
+					<img src="img/order.png" alt="ЗАКАЗ"><br>
+					<p>Заказываете</p>
+					<div class="work-body-text-1">
+						<a href="#">Оставляете заявку</a>
+						<p>с комментарием о выбранном товаре или звоните</p>
+					</div>
+				</div>
+				<div class="work-body-2 wow fadeInDown" data-wow-delay="0.6s" >
+					<img src="img/delivery.png" alt="ДОСТАВКА"><br>
+					<p>Доставляем</p>
+					<div class="work-body-text-1">
+						<p>Уточняем заказ и доставляем в этот же день</p>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="menu-body">
+		 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			 <div class="panel panel-default">
+			 	<div class="panel-heading" role="tab" id="headingOne">
+			 		<h4 class="panel-title">
+			 			<a class="collapsed" role="button" data-toggle="modal" data-target="#ProductModal">Доставка</a>
+			 		</h4>
+			 	</div>
+			 	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+			 		<div class="panel-body">
+			 			<p>Это текст для демонстрации секций аккордиона. Это текст для демонстрации секций аккордиона. </p>
+			 		</div>
+			 	</div>
+			 </div>
+			 <div class="panel panel-default">
+			 	<div class="panel-heading" role="tab" id="headingTwo">
+					<h4 class="panel-title">
+			 			<a class="collapsed" role="button" data-toggle="modal" data-target="#deleteProductModal" data-productid="3" data-productname="Product 3">Оплата</a>
+					</h4>
+			 	</div>
+			 	<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			 		<div class="panel-body">
+						<p>Это текст для демонстрации секций аккордиона. Это текст для демонстрации секций аккордиона. </p>
+			 		</div>
+			 	</div>
+			 </div>
+ 		</div>
+	</div>
+	<div class="modal fade" id="ProductModal" tabindex="-1" role="dialog" aria-labelledby="deleteProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/exit.png" alt=""></button>
+          <p class="modal-title" id="deleteProductModalLabel">Доставка</p>
+
+        </div>
+        <div class="modal-body">
+        	<p class="product-title1">После того, как вы <a href="">оставите заявку</a>, мы свяжемся с вами для уточнения заказа.</p>
+        	<p class="product-title2">Общие условия доставки </p>
+			<p class="product-title1">• Бесплатная доставка при заказе двух упаковок подгузников. <br>
+				• Бесплатная доставка для жителей мкр. Парковый. <br>
+				• При заказе одной упаковки подгузников стоимость доставки - 50 рублей! <br>
+				• Заявки на доставку принимаются до 17:00, поступившие позже этого времени, будут доставляться на следующий день. <br>
+				• Доставка осуществляется ежедневно с 17:00 до 22:00.</p>
+			<p class="product-title2">Самовывоз</p>
+			<p class="product-title1">ул. Чичерина, 5 (магазин "Антошка").Предварительно необходимо связаться с оператором!</p>
+			<p class="product-title2">Часы работы: пн-сб 10:00-19:00, вс 10:00-18:00. </p>
+			<center><p class="product-title3">Если у вас остались вопросы, свяжитесь с нами по телефону:</p></center>
+			<p class="product-title4"><a href="tel:+7 (952) 510 54 15">795-46-47</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="deleteProductModal" tabindex="-1" role="dialog" aria-labelledby="deleteProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+          <h4 class="modal-title" id="deleteProductModalLabel">Заголовок2</h4>
+
+        </div>
+        <div class="modal-body">
+          	<p>By placing an order through this website, you agree to the terms and conditions set for the below. Please read through these terms carefully before placing your order and print a copy for future reference. Please also read our Privacy Policy
+            regarding personal information provided by you, which is incorporated herein by reference. </p>
+          	<p>Any statements on this site or any materials or supplements distributed or sold by have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.
+            If you are pregnant, nursing, taking medication, or have a history of heart conditions we suggest consulting with a physician before using any of our products. The results on all products are not typical and not everyone will experience these
+            results. </p>
+          	<p>You will receive the product for free; however, you must pay Postage and Packaging of Â£3.50 for us to send you a 14 day trial supply of Ultra Supercharge. We ship the product the day after you place your order (except that orders placed Friday-Sunday
+            will be shipped the following Monday). We consider the end date for your trial period to be 14 days after you place your order.</p>
+            <p>You will receive the product for free; however, you must pay Postage and Packaging of Â£3.50 for us to send you a 14 day trial supply of Ultra Supercharge. We ship the product the day after you place your order (except that orders placed Friday-Sunday
+            will be shipped the following Monday). We consider the end date for your trial period to be 14 days after you place your order.</p>
+            <p>You will receive the product for free; however, you must pay Postage and Packaging of Â£3.50 for us to send you a 14 day trial supply of Ultra Supercharge. We ship the product the day after you place your order (except that orders placed Friday-Sunday
+            will be shipped the following Monday). We consider the end date for your trial period to be 14 days after you place your order.</p>
+            <p>You will receive the product for free; however, you must pay Postage and Packaging of Â£3.50 for us to send you a 14 day trial supply of Ultra Supercharge. We ship the product the day after you place your order (except that orders placed Friday-Sunday
+            will be shipped the following Monday). We consider the end date for your trial period to be 14 days after you place your order.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<div class="commentst">
+		<div class="commentst-title1">
+			<p>ОТЗЫВЫ</p>
+		</div>
+		<div class="commentst-title2">
+			<p>Ценим ваше доверие и стараемся работать для вас</p>
+		</div>
+		<div id="sld">
+            <div class="bxslider">
+                <div>
+                    <div class="commentst-title">
+                        <p>Спасибо Маленькому аисту! В холодный январский день не хотелось выходить из дома в поисках подгузников, а ребята оперативно привезли все что нужно! Ещё подарили пробник моющего средства))</p>
+                    </div>
+                    <div class="commentst-body">
+                            <div class="commentst-body-1">
+                                <img src="koments.jpg" alt="ЗАКАЗ" align="middle">
+                            </div>
+                            <div class="commentst-body-2">
+                               &nbsp;<p>Мария Иванова</p>
+                            </div>
+                    </div>   
+                </div>
+                <div>
+                    <div class="commentst-title">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, placeat. Quidem deserunt, error veniam nesciunt officiis quae ipsum repellendus obcaecati culpa necessitatibus minus amet, nostrum tempore, enim, quam aspernatur quo.</p>
+                    </div>
+                    <div class="commentst-body">
+                            <div class="commentst-body-1">
+                                <img src="koments.jpg" alt="ЗАКАЗ" align="middle">
+                            </div>
+                            <div class="commentst-body-2">
+                               &nbsp;<p>Мария Иванова</p>
+                            </div>
+                    </div>   
+                </div>
+                <div>
+                    <div class="commentst-title">
+                        <p>Спасибо Маленькому аисту! В холодный январский день не хотелось выходить из дома в поисках подгузников, а ребята оперативно привезли все что нужно! Ещё подарили пробник моющего средства))</p>
+                    </div>
+                    <div class="commentst-body">
+                            <div class="commentst-body-1">
+                                <img src="koments.jpg" alt="ЗАКАЗ" align="middle">
+                            </div>
+                            <div class="commentst-body-2">
+                               &nbsp;<p>Мария Иванова</p>
+                            </div>
+                    </div>   
+                </div>
+                <div>
+                    <div class="commentst-title">
+                        <p>Спасибо Маленькому аисту! В холодный январский день не хотелось выходить из дома в поисках подгузников, а ребята оперативно привезли все что нужно! Ещё подарили пробник моющего средства))</p>
+                    </div>
+                    <div class="commentst-body">
+                            <div class="commentst-body-1">
+                                <img src="koments.jpg" alt="ЗАКАЗ" align="middle">
+                            </div>
+                            <div class="commentst-body-2">
+                               &nbsp;<p>Мария Иванова</p>
+                            </div>
+                    </div>   
+                </div>
+                <div>
+                    <div class="commentst-title">
+                        <p>Спасибо Маленькому аисту! В холодный январский день не хотелось выходить из дома в поисках подгузников, а ребята оперативно привезли все что нужно! Ещё подарили пробник моющего средства))</p>
+                    </div>
+                    <div class="commentst-body">
+                            <div class="commentst-body-1">
+                                <img src="koments.jpg" alt="ЗАКАЗ" align="middle">
+                            </div>
+                            <div class="commentst-body-2">
+                               &nbsp;<p>Мария Иванова</p>
+                            </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="commentst-text-vk">
+        	<p>
+        		<img class="vk" src="img/vk.svg" align="middle" alt="">
+        		Оставить свой отзыв или почитать другие можно у нас <a href="#">Вконтакте</a>
+        	</p>
+        </div>
+	</div>
+	<div class="end">
+		<div class="end-title">
+			<p>Определились с выбором?</p>
+		</div>
+		<div class="zayvka1">
+			<a href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+		</div>
+		<div class="end-body">
+			<p>или позвонить: <a href="tel:+7 (952) 510 54 15">795-46-47</a></p>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-title1">
+			<p>КОНТАКТЫ</p>
+		</div>
+		<div class="footer-title2">
+			<p>Открыты каждый день!</p>
+		</div>
+		<div class="footer-body">
+				<div class="footer-body-1">
+					<a href="tel:+7 (952) 510 54 15">
+						<div class="footer-body-1-img">
+							<img src="img/phone1.png" alt="">
+						</div>
+					</a>
+					<p>Viber, WhatsApp<br>
+						+ 7 (950) 900 00 00</p>	
+				</div>
+				<div class="footer-body-2">
+					<a href="tel:+7 (952) 510 54 15">
+						<div class="footer-body-1-img">
+							<img src="img/vk1.png" alt="">
+						</div>
+					</a>
+					<p>aistkid</p>
+				</div>
+				<div class="footer-body-3">
+					<a href="tel:+7 (952) 510 54 15">
+						<div class="footer-body-1-img">
+							<img src="img/inst1.png" alt="">
+						</div>
+					</a>
+					<p>aistkid</p>
+				</div>
+				<div class="footer-body-4">
+					<a href="tel:+7 (952) 510 54 15">
+						<div class="footer-body-1-img">
+							<img src="img/time1.png" alt="">
+						</div>
+					</a>
+					<p>Каждый день<br>
+					с 10:00 до 20:00</p>
+				</div>
+				<div class="footer-end">
+					<div class="col-md-6"><img src="img/logo2.png" alt=""></div>
+					<div class="col-md-6"><p>© Магазин детского комфорта «Маленький аист», 2019</p></div>		
+				</div>
+		</div>
+	</div>
+	<!-- bootstrap и jquery-->  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>﻿
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+	<script src="bxslider-4-4.2.12/bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+    <!-- js файлы -->
+  	<script src="js/js.js"></script>
+  	<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+	<script>
+	$("div.navbar-fixed-top").autoHidingNavbar();
+	</script>
+	<!-- Стрелка вниз -->
+    <script type="text/javascript">
+		 $(document).ready(function(){
+		    $("#header_arrow").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1000);
+		    });
+		});
+	</script>
+
+<!-- 	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(window).scrollTop()>50){
+
+					$('#catalog-animate').fadeIn(900)
+				}else{
+
+					$('#catalog-animate').fadeOut(700)
+				}
+			});
+		});
+	</script> -->
+	<script type="text/javascript">
+			 $('#myCollapse').collapse({
+	  toggle: false
+	});
+	</script>
+
+</body>
+</html>
