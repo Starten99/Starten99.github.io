@@ -36,20 +36,19 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center">
 					<li>
-						<a href="#">
+						<a href="#sale-content">
 							<span class="figura">
 								<img class="sale" src="img/sale.svg" alt="">
 							</span>
 							<span class="figura2">АКЦИЯ</span>
 						</a>
 					</li>	
-					<li><a href="#"><p>КАТАЛОГ</p></a></li>
-					<li><a href="#"><p>ДОСТАВКА И ОПЛАТА</p></a></li>
-					<li><a href="#"><p>КОНТАКТЫ</p></a></li>
+					<li><a href="#catalog"><p>КАТАЛОГ</p></a></li>
+					<li><a href="#menu-body-delivery"><p>ДОСТАВКА И ОПЛАТА</p></a></li>
+					<li><a href="#footer"><p>КОНТАКТЫ</p></a></li>
 					<li><div class="phone"><a href="tel:+7 (952) 510 54 15"><img class="phonetop" src="img/phone.svg" alt="">&nbsp;795-46-47</a></div></li>
 				</ul>
 			</div>
-			
 		</div>
 	</div>
 	<!--приветствующее изображение-->
@@ -84,7 +83,7 @@
 			</div>
 
 	<!-- каталог -->
-	<div class="catalog">
+	<div class="catalog" id="catalog">
 		<div class="catalog-title1">
 			<p>КАТАЛОГ</p>
 		</div>
@@ -97,13 +96,13 @@
 		<div id="catalog-animate">
 			<div class="catalog-body">
 				<a href="product.html">
-					<div class="catalog-body-1  wow fadeInleft" data-wow-delay="0.2s">
+					<div class="catalog-body-1  wow fadeInDown" data-wow-delay="0.2s">
 						<img src="img/catalog-body-1.svg" alt=""><br>
 						<p>Подгузники</p>
 					</div>
 				</a>
 				<a href="#">
-					<div class="catalog-body-2  wow fadeInright " data-wow-delay="0.2s">
+					<div class="catalog-body-2  wow fadeInDown" data-wow-delay="0.8s">
 						<img src="img/catalog-body-2.svg" alt=""><br>
 						<p>Гигиена и уход</p>
 					</div>
@@ -120,22 +119,22 @@
 			<p>Сэкономьте деньги и время — для этого мы и работаем</p>
 		</div>
 		<div class="service-body">
-				<div class="service-body-1 wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="2s">
+				<div class="service-body-1 wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="2s">
 					<img src="img/Service1-delivery.svg" alt="Доставка"><br>
 					<p>Удобная доставка</p>
 					<div class="service-body-text-1"><p>Бесплатная доставка</p></div>
 				</div>
-				<div class="service-body-2 wow bounceInLeft" data-wow-delay="0.4s" data-wow-duration="2s">
+				<div class="service-body-2 wow fadeInDown" data-wow-delay="0.4s" data-wow-duration="2s">
 					<img src="img/Service2-Quality.svg" alt="Качество"><br>
 					<p>Высокое качество</p>
 					<div class="service-body-text-1"><p>Следим за качеством и хранением товара</p></div>
 				</div>
-				<div class="service-body-3 wow bounceInLeft" data-wow-delay="0.6s" data-wow-duration="2s">
+				<div class="service-body-3 wow fadeInDown" data-wow-delay="0.6s" data-wow-duration="2s">
 					<img src="img/Service3-Low-price.svg" alt="Низкиецены"><br>
 					<p>Низкие цены</p>
 					<div class="service-body-text-1"><p>Не завышаем цены, нам важно, чтобы нас ценило больше людей</p></div>
 				</div>
-				<div class="service-body-4 wow bounceInLeft" data-wow-delay="0.8s" data-wow-duration="2s">
+				<div class="service-body-4 wow fadeInDown" data-wow-delay="0.8s" data-wow-duration="2s">
 					<img src="img/Service4-Bonuses_and_competition.svg" alt="Бонусы и конкурсы"><br>
 					<p>Бонусы и конкурсы</p>
 					<div class="service-body-text-1"><p>Разыгрываем призы у себя на странице Вконтакте</p></div>
@@ -151,7 +150,7 @@
 			<p>Быстро и удобно!</p>
 		</div>
 		<div class="work-body">
-				<div class="work-body-1 wow fadeIn" data-wow-delay="0.2s" >
+				<div class="work-body-1 wow fadeInDown" data-wow-delay="0.2s" >
 					<img src="img/order.png" alt="ЗАКАЗ"><br>
 					<p>Заказываете</p>
 					<div class="work-body-text-1">
@@ -159,7 +158,7 @@
 						<p>с комментарием о выбранном товаре или звоните</p>
 					</div>
 				</div>
-				<div class="work-body-2 wow fadeInDown" data-wow-delay="0.6s" >
+				<div class="work-body-2 wow fadeInDown" data-wow-delay="0.8s" >
 					<img src="img/delivery.png" alt="ДОСТАВКА"><br>
 					<p>Доставляем</p>
 					<div class="work-body-text-1">
@@ -168,33 +167,35 @@
 				</div>
 		</div>
 	</div>
-	<div class="menu-body">
-		 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-			 <div class="panel panel-default">
-			 	<div class="panel-heading" role="tab" id="headingOne">
-			 		<h4 class="panel-title">
-			 			<a class="collapsed" role="button" data-toggle="modal" data-target="#ProductModal">Доставка</a>
-			 		</h4>
-			 	</div>
-			 	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-			 		<div class="panel-body">
-			 			<p>Это текст для демонстрации секций аккордиона. Это текст для демонстрации секций аккордиона. </p>
-			 		</div>
-			 	</div>
-			 </div>
-			 <div class="panel panel-default">
-			 	<div class="panel-heading" role="tab" id="headingTwo">
-					<h4 class="panel-title">
-			 			<a class="collapsed" role="button" data-toggle="modal" data-target="#deleteProductModal" data-productid="3" data-productname="Product 3">Оплата</a>
-					</h4>
-			 	</div>
-			 	<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-			 		<div class="panel-body">
-						<p>Это текст для демонстрации секций аккордиона. Это текст для демонстрации секций аккордиона. </p>
-			 		</div>
-			 	</div>
-			 </div>
- 		</div>
+	<div id="menu-body-delivery">
+		<div class="menu-body" id="menu-body">
+			 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				 <div class="panel panel-default">
+				 	<div class="panel-heading" role="tab" id="headingOne">
+				 		<h4 class="panel-title">
+				 			<a class="collapsed" role="button" data-toggle="modal" data-target="#ProductModal">Доставка</a>
+				 		</h4>
+				 	</div>
+				 	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				 		<div class="panel-body">
+				 			<p>Это текст для демонстрации секций аккордиона. Это текст для демонстрации секций аккордиона. </p>
+				 		</div>
+				 	</div>
+				 </div>
+				 <div class="panel panel-default">
+				 	<div class="panel-heading" role="tab" id="headingTwo">
+						<h4 class="panel-title">
+				 			<a class="collapsed" role="button" data-toggle="modal" data-target="#deleteProductModal" data-productid="3" data-productname="Product 3">Оплата</a>
+						</h4>
+				 	</div>
+				 	<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				 		<div class="panel-body">
+							<p>Это текст для демонстрации секций аккордиона. Это текст для демонстрации секций аккордиона. </p>
+				 		</div>
+				 	</div>
+				 </div>
+	 		</div>
+		</div>
 	</div>
 	<div class="modal fade" id="ProductModal" tabindex="-1" role="dialog" aria-labelledby="deleteProductModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -345,7 +346,7 @@
 			<p>или позвонить: <a href="tel:+7 (952) 510 54 15">795-46-47</a></p>
 		</div>
 	</div>
-	<div class="footer">
+	<div class="footer" id="footer">
 		<div class="footer-title1">
 			<p>КОНТАКТЫ</p>
 		</div>
@@ -418,25 +419,20 @@
 		    });
 		});
 	</script>
-
-<!-- 	<script type="text/javascript">
-		$(document).ready(function(){
-			$(window).scroll(function(){
-				if($(window).scrollTop()>50){
-
-					$('#catalog-animate').fadeIn(900)
-				}else{
-
-					$('#catalog-animate').fadeOut(700)
-				}
-			});
-		});
-	</script> -->
 	<script type="text/javascript">
 			 $('#myCollapse').collapse({
 	  toggle: false
 	});
 	</script>
-
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#bs-example-navbar-collapse-1").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+</script>
 </body>
 </html>

@@ -382,8 +382,8 @@ body{
 }
 /*акция*/
 #sale-content{
-	margin-top: 79px;
-	padding-top:21px;
+	
+	padding-top:80px;
 }
 #sale2{
 	top: 50px;
@@ -995,6 +995,9 @@ body{
 	.work-body-2{
 		font-size: 50px;
 	}
+}
+#menu-body-delivery{
+	padding-top: 50px;
 }
 .menu-body{
 	background-color: #70bfff; 
@@ -1850,14 +1853,13 @@ button.close {
 	justify-content: center;
 	z-index: 9999;
 	margin:0 auto;
-	text-align: center;
+	
 	padding-top: 50px;
 	padding-bottom: 100px;
 }
 .product-detailed-body-1{
 	min-width: 150px;
 	height: auto;
-	margin:15px;
 	border-radius: 30px;
 	vertical-align: center;
 }
@@ -1865,6 +1867,7 @@ button.close {
 	font-size: 26px;
 	color: #004f96;
 	text-align: left;
+	margin:15px;
 	font-family: CirceRounded-Regular;
 }
 .product-detailed-body-1 img{
@@ -1974,4 +1977,35 @@ button.close {
 
 .visible{
 	opacity: 1;
+}
+.zayvka3{
+	margin:0px;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.zayvka3 a{
+	font-size:16px;
+	color: #fff;
+	font-family: CirceRounded-Regular;
+	letter-spacing:1px;
+	background-color: #55a0eb;
+	border-radius: 30px 30px;
+	padding: 25px 30px 20px 30px;
+	transition: background-color 0.7s linear;
+}
+.zayvka3 a:hover{
+	color: #fff;
+	text-decoration:none;
+	background-color: #005096;
+	
+}
+@media (max-width: 360px){
+	.zayvka3{
+	margin-top: 30px;
+	}
+    .zayvka3 a{
+	font-size:15px;
+	text-align: center;
+	padding: 15px 20px 10px 20px;
+	}
 }
