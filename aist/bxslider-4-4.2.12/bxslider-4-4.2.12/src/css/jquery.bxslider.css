@@ -70,12 +70,12 @@ ul.bxslider {
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    width: 30px;
+    width: 32px;
     height: 48px;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
-  background-position: -2px 0;
+  background-position: -0px 0;
 }
 .bx-wrapper .bx-next {
     right: 100px;
@@ -84,12 +84,12 @@ ul.bxslider {
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    width: 30px;
+    width: 32px;
     height: 48px;
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
-  background-position: -2px 0;
+  background-position: -0px 0;
 }
 @media (max-width: 1162px){
     .bx-wrapper .bx-prev {
@@ -103,8 +103,8 @@ ul.bxslider {
   position: absolute;
   vertical-align: center;
   outline: 0;
-  width: 32px;
-  height: 56px;
+  width: 36px;
+  height: 58px;
   text-indent: -9999px;
   z-index: 100;
 }

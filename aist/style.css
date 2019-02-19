@@ -273,7 +273,7 @@ body{
 	margin-bottom: 30px;
 }
 .zayvka2 a{
-	font-size:16px;
+	font-size:17px;
 	color: #fff;
 	font-family: CirceRounded-Regular;
 	letter-spacing:1px;
@@ -400,7 +400,8 @@ body{
 	min-width: 290px;
 	height: auto;
 	font-size: 25px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background: #4ca7f0;
 }
 #sale2:after{
@@ -418,6 +419,8 @@ body{
 	display: flex;
   	align-items: stretch;
   	  justify-content: center;
+  	  margin:0px;
+  	  padding:0px;
 }
 .flex-container .sale2-test1 {
 	height: auto;
@@ -440,10 +443,9 @@ body{
 	margin: 10px;
 	font-family: CirceRounded-Regular;
 	text-align: center;
-	font-size: 25px;
+	align-self: center;
+	font-size: 26px;
 	color: #fff;
-	margin-top:5%;
-	text-align: center;
 }
 .flex-container .sale2-test3 {
 	min-width: 40px;
@@ -957,7 +959,7 @@ body{
 
 .work-body-text-1 p{
 	max-width:350px; 
-	font-size: 23px;
+	font-size: 24px;
 	color: #b2b2b2;
 	font-family: CirceRounded-Regular;
 }
