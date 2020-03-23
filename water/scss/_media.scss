@@ -1,0 +1,220 @@
+@media (max-width:1180px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 1063px){
+    .about-products__content{ 
+        .about-products__info{ 
+            .about-products__wrapper{
+                .about-products__item{
+                    max-width: 442px;
+                    flex-grow: 0;
+                    flex-shrink: 1;
+                    &__big{
+                        flex-grow: 0;
+                        flex-shrink: 1;
+                    }
+                    &-info{
+                        margin-left: 20px;
+                        &-title{
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:895px) {
+    .promo__buy {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 522px){
+    .about-products__content{ 
+        .about-products__info{ 
+            .about-products__wrapper{
+                .about-products__item{
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    &-info{
+                        max-width: 300px;
+                        margin-left: 20px;
+                        &-title{
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .delivery{
+        &__content{
+            .delivery__wrapper{
+                .delivery__item{
+                    .button__buy{
+                        font-size: 18px;
+                    }
+                    .delivery__number-phone{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 380px){
+    .promo{
+        &__content{
+            .promo__wrapper{
+                flex-wrap: wrap;
+                .promo__item{
+                    margin-bottom: 15px;
+                    &:nth-last-child(-n+2){
+                        margin-bottom: 0px;
+                    }
+                } 
+            }
+            .button__buy{
+                font-size: 20px;
+            }
+        }
+    }
+    .delivery{
+        &__content{
+            .delivery__wrapper{
+                .delivery__item{
+                    .delivery__product-wrapper{
+                        flex-wrap: wrap;
+                        .delivery__product-item{
+                            margin-bottom: 15px;
+                            &:nth-last-child(-n+2){
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    .button__buy{
+                        font-size: 16px;
+                    }
+                    .delivery__number-phone{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .about-products__content{ 
+        .about-products__info{ 
+            .about-products__wrapper{
+                .about-products__item{
+                    width: 100%;
+                    box-sizing: border-box;
+                    max-width: 320px;
+                }
+            }
+        }
+    }
+}
+// правила ТОЛЬКО для Internet Explorer 10 и 11
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .promo{
+        &__content{
+            justify-content: center;
+        }
+        &__info{
+            margin-right: 20px;
+        }
+    }
+    .delivery{
+        margin-top: 24px;
+        color:$darkgraycolor;
+        &__content{
+            .delivery__wrapper{
+                justify-content: center;
+            }
+            .delivery__item{
+                
+            }
+        }
+    }
+    .about-products{
+        &__content{
+            margin: 0 auto;
+            .about-products__info{
+                .about-products__wrapper{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .reviews{
+        &__content{
+            .reviews__info{
+                .reviews__wrapper{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .about-products__content{ 
+        .about-products__info{ 
+            .about-products__wrapper{
+                .about-products__item{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+// правила ТОЛЬКО для Edge
+@supports (-ms-ime-align:auto) {
+	    .promo{
+        &__content{
+            justify-content: center;
+        }
+        &__info{
+            margin-right: 20px;
+        }
+    }
+    .delivery{
+        margin-top: 24px;
+        color:$darkgraycolor;
+        &__content{
+            .delivery__wrapper{
+                justify-content: center;
+            }
+            .delivery__item{
+                margin:0 10px;
+            }
+        }
+    }
+    .about-products{
+        &__content{
+            margin: 0 auto;
+            .about-products__info{
+                .about-products__wrapper{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .reviews{
+        &__content{
+            .reviews__info{
+                .reviews__wrapper{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .about-products__content{ 
+        .about-products__info{ 
+            .about-products__wrapper{
+                .about-products__item{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
